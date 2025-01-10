@@ -1,0 +1,754 @@
+@import url('css/fonts.css');
+
+/* VARIABLES */
+
+:root {
+  --primary: #1b9b3c;
+  --secundary: #bada55;
+  --tertiary: #45ed7d;
+  --background: #f4f4f4;
+  --accent: #072c12;
+  --accent400: #50d873;
+  --accent500: #28bf4f;
+  --accent600: #1b9b3c;
+}
+
+/* RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  /* Regular por defecto */
+}
+
+.container_box {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* HEADER */
+
+header {
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  padding: 16px 60px;
+  box-shadow: 0px 4px 4.8px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  z-index: 10;
+}
+
+.header_container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_logo {
+  max-width: 250px;
+}
+
+.header_pages {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.header_pages a {
+  text-decoration: none;
+  color: black;
+}
+
+.header_pages a:hover {
+  color: var(--primary);
+}
+
+.header_nav_tablet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.header_burguer:hover,
+.header_burguer_tablet:hover {
+  cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  padding-top: 76px;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* MAIN - BANNER */
+
+.main_banner {
+  min-height: 465px;
+  padding: 50px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  color: white;
+}
+
+.main_banner_bg_inicio {
+  background: url(../images/banner_index.png) center;
+  background-size: cover;
+  background-position: center calc(30%);
+}
+
+.main_banner_bg_catFeteria {
+  background: url(../images/banner_catFeteria.png) center;
+  background-size: cover;
+  background-position: center calc(30%);
+}
+
+.main_banner p {
+  width: 60%;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.main_banner div {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+}
+
+.banner_button {
+  width: 139px;
+}
+
+.button_primary {
+  display: flex;
+  padding: 10px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 20px;
+  background-color: var(--accent500);
+  text-decoration: none;
+  color: black;
+}
+
+.button_primary:hover {
+  background-color: var(--accent600);
+}
+
+/* MAIN - PAYMENTS */
+
+.payment_button {
+  width: 468px;
+  align-self: center;
+}
+
+.main_payments,
+.main_mision_vision {
+  padding: 40px 60px;
+}
+
+.main_payments>div {
+  padding: 50px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.main_payments h2,
+.main_payments h3,
+.main_payments h4 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.main_payments h2 {
+  font-size: 57px;
+}
+
+.main_payments h3 {
+  font-size: 24px;
+}
+
+.main_payments h4 {
+  font-size: 20px;
+}
+
+.payment_items {
+  display: flex;
+  flex-direction: row;
+  gap: 37px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.payment_items a:hover {
+  opacity: 0.5;
+}
+
+.payment_item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.payment_item img {
+  max-width: 280px;
+}
+
+/* MAIN - MISION/VISION */
+
+.main_mision_vision>div {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.mv_item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mv_item h2 {
+  font-size: 57px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: -0.25px;
+}
+
+.mv_item p {
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.mv_item a {
+  width: 234px;
+}
+
+/* MAIN - HELP */
+
+.main_help {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  min-height: 661px;
+  background: url(../images/cat_help.png) center;
+  background-size: cover;
+  padding: 0 60px;
+}
+
+.main_help>div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--accent400);
+  width: 439px;
+  padding: 30px 71px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8.1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main_help h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.help_items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.help_item {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+}
+
+.help_item img {
+  height: 24px;
+  width: 24px;
+  align-self: center;
+}
+
+.help_item p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+/* MAIN - ADS */
+
+.main_ads {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 40px 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ad_item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.ad_item:hover {
+  box-shadow: 0px 4px 4.8px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.ad_item img {
+  max-width: 345px;
+  border-radius: 12px 12px 0 0;
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: #cac4d0;
+}
+
+.ad_item a {
+  text-decoration: none;
+  color: var(--primary);
+  align-self: center;
+  padding: 16px;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #cac4d0;
+}
+
+/* MAIN - CATFETERIA */
+.button_secondary {
+  opacity: 0.5;
+  border: 2px solid var(--accent600);
+}
+
+.main_reserva {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  padding: 40px 60px;
+}
+
+.main_reserva_img {
+  width: 400px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.main_reserva_info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.main_reserva_ad {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main_reserva_address {
+  font-weight: 500;
+}
+
+.main_services {
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.main_services_title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#carousel_serveces {
+  max-width: 400px;
+}
+
+.container_carousel {
+  display: flex;
+  justify-content: center;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 60px;
+  gap: 50px;
+  justify-content: center;
+  color: white;
+  background-color: var(--primary);
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+.footer_pages ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+.footer_sm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_pages ul,
+.footer_contact,
+.footer_sm {
+  min-width: 350px;
+}
+
+.contact_item {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+.contact_item p {
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.contact_img {
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+}
+
+.sm_images {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 0 30px;
+}
+
+.sm_images a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SIDEBAR */
+
+.offcanvas.offcanvas-end {
+  width: 300px;
+  background-color: var(--background);
+  padding: 1rem;
+}
+
+.offcanvas-header .btn-close:hover {
+  background-color: var(--primary);
+}
+
+/* MEDIAS QUERIES */
+
+/* 1236px - Infinito */
+@media (1236px < width) {
+
+  .header_nav_tablet,
+  .header_burguer {
+    display: none;
+  }
+}
+
+/* 768px - 1236px */
+@media (768px < width <=1236px) {
+
+  header {
+    padding: 16px 18px;
+  }
+
+  .header_logo {
+    max-width: 200px;
+  }
+
+  .header_nav_desktop,
+  .header_burguer {
+    display: none;
+  }
+
+  .main_banner p {
+    width: 80%;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .main_payments h2 {
+    font-size: 50px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .footer_pages ul,
+  .footer_contact,
+  .footer_sm {
+    min-width: 200px;
+  }
+
+  .sm_images a img {
+    width: 50px;
+  }
+}
+
+/* 0 - 768px */
+@media (width <=768px) {
+
+  header {
+    padding: 16px 20px;
+  }
+
+  .header_logo {
+    max-width: 180px;
+  }
+
+  .header_nav_desktop,
+  .header_nav_tablet {
+    display: none;
+  }
+
+  .main_banner p {
+    width: 90%;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .banner_button {
+    width: 100%;
+  }
+
+  .main_banner {
+    padding: 20px;
+    min-height: unset;
+    height: 385px;
+    justify-content: center;
+  }
+
+  .payment_button,
+  .mv_item a {
+    width: 50%;
+    align-self: center;
+  }
+
+  .main_payments h2 {
+    font-size: 35px;
+  }
+
+  .main_payments h3 {
+    font-size: 20px;
+  }
+
+  .main_payments,
+  .main_mision_vision,
+  .main_reserva,
+  .main_services {
+    padding: 20px;
+  }
+
+  .main_payments>div {
+    padding: 25px;
+  }
+
+  .payment_items {
+    gap: 20px;
+  }
+
+  .payment_items h4 {
+    text-wrap: wrap;
+    word-break: break-all;
+  }
+
+  .main_mision_vision>div {
+    flex-direction: column;
+  }
+
+  .mv_item h2 {
+    font-size: 45px;
+  }
+
+  .main_help {
+    flex-direction: unset;
+    align-items: unset;
+    justify-content: flex-end;
+    padding: 30px 20px;
+    min-height: unset;
+  }
+
+  .main_ads {
+    padding: 20px;
+  }
+
+  .main_help>div {
+    padding: 30px;
+  }
+
+  .main_help h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .footer_pages {
+    display: none;
+  }
+
+  .footer_contact,
+  .footer_sm {
+    min-width: 180px;
+  }
+
+  .contact_item p {
+    max-width: 130px;
+  }
+
+  .footer_contact,
+  .footer_sm {
+    max-width: 200px;
+  }
+
+  .footer_sm {
+    text-align: center;
+  }
+
+  .footer_contact a {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+  }
+
+  .sm_images a img {
+    width: 38px;
+  }
+
+  .main_services_title {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+/* 0 - 1100px */
+@media (width <=1050px) {
+  .main_reserva {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* 0 - 450px */
+@media (width <=450px) {
+  .main_banner div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .payment_button,
+  .mv_item a {
+    width: 100%;
+  }
+
+  .main_reserva_img {
+    width: 100%;
+    height: unset;
+  }
+}
+
+/* 0 - 380px */
+@media (width <=380px) {
+  .payment_item img {
+    max-width: 100%;
+  }
+}
