@@ -11,6 +11,7 @@
   --accent400: #50d873;
   --accent500: #28bf4f;
   --accent600: #1b9b3c;
+  --accent50: #F1FCF3;
 }
 
 /* RESET */
@@ -146,6 +147,12 @@ main {
 
 .main_banner_bg_adopta {
   background: url(../images/banner_adopta.png) center;
+  background-size: cover;
+  background-position: center calc(30%);
+}
+
+.main_banner_bg_contacto {
+  background: url(../images/banner_contacto.png) center;
   background-size: cover;
   background-position: center calc(30%);
 }
@@ -510,6 +517,99 @@ main {
   border-radius: 15px;
   box-shadow: 0px 4px 8.1px 0px rgba(0, 0, 0, 0.25);
 
+}
+
+/* MAIN - LOCATION */
+.main_location {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  padding: 40px 60px;
+}
+
+.main_location_map {
+  max-width: 469px;
+  border-radius: 20px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.main_location_description h2 {
+  color: var(--primary);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0.5px;
+}
+
+.main_location_address {
+  font-weight: 500;
+}
+
+.main_location_email {
+  color: var(--primary);
+}
+
+.main_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.main_form_inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main_form_inputs .button_primary {
+  width: 200px;
+  align-self: end;
+  border: 0;
+}
+
+.form-control {
+  border: 2px solid var(--accent600);
+  background-color: var(--accent50);
+}
+
+.form-control::placeholder {
+  color: rgba(0, 0, 0, 0.50);
+}
+
+.form-control:focus {
+  border-color: var(--accent600);
+  box-shadow: 0 0 0 .25rem rgba(189, 245, 203);
+}
+
+.main_form_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  border-radius: 15px;
+  background: var(--accent50);
+  box-shadow: 0px 4px 8.1px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px 71px;
+  min-width: 659px;
+}
+
+.main_form_container h2,
+.main_form_container h3 {
+  text-align: center;
+}
+
+.main_form_container h2 {
+  font-weight: 400;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.50);
+}
+
+.main_form_container h3 {
+  font-weight: 300;
+  line-height: 40px;
 }
 
 /* FOOTER */
