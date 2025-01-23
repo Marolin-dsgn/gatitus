@@ -1,0 +1,31 @@
+/* 768px - 1236px */
+@media (768px < width <=1236px) {
+
+    header {
+        padding: 16px 18px;
+    }
+
+    .header_logo {
+        max-width: 200px;
+    }
+
+    .header_nav_desktop,
+    .header_burguer {
+        display: none;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer_pages ul,
+    .footer_contact,
+    .footer_sm {
+        min-width: 200px;
+    }
+
+    .sm_images a img {
+        width: 50px;
+    }
+
+}
