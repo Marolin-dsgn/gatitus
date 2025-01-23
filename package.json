@@ -4,7 +4,7 @@
   "description": "Proyecto de pagina web creado con HTML, CSS y Bootstrap basado en prototipos de alta fidelidad realizados en Figma.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch sass/style.scss css/style.css"
   },
   "repository": {
     "type": "git",
