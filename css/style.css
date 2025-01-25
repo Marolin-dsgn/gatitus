@@ -187,6 +187,13 @@ main {
   box-shadow: 0 0 0 0.25rem rgb(189, 245, 203);
 }
 
+.coming_soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
 /* PAGES */
 .common_padding, .main_payments {
   padding: 40px 60px;
@@ -256,6 +263,13 @@ main {
 .form-control:focus {
   border-color: #1b9b3c;
   box-shadow: 0 0 0 0.25rem rgb(189, 245, 203);
+}
+
+.coming_soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
 
 .common_h, .main_payments h4, .main_payments h3, .main_payments h2 {
@@ -509,6 +523,13 @@ main {
   box-shadow: 0 0 0 0.25rem rgb(189, 245, 203);
 }
 
+.coming_soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
 .main_banner_bg_catFeteria {
   min-height: 465px;
   padding: 50px 70px;
@@ -657,6 +678,13 @@ main {
 .form-control:focus {
   border-color: #1b9b3c;
   box-shadow: 0 0 0 0.25rem rgb(189, 245, 203);
+}
+
+.coming_soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
 
 .main_banner_bg_adopta {
@@ -827,6 +855,13 @@ main {
   box-shadow: 0 0 0 0.25rem rgb(189, 245, 203);
 }
 
+.coming_soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
 .center, .main_form_container h3, .main_form_container h2 {
   text-align: center;
 }
@@ -973,6 +1008,13 @@ main {
 .form-control:focus {
   border-color: #1b9b3c;
   box-shadow: 0 0 0 0.25rem rgb(189, 245, 203);
+}
+
+.coming_soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
 
 .main_banner_bg_voluntariado {
