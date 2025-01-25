@@ -13,6 +13,14 @@
     background-position: center calc(30%);
 }
 
+@mixin common_contanier {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    padding: 40px 60px;
+}
+
 .common_padding {
     padding: 40px 60px;
 }

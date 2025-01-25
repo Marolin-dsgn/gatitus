@@ -104,13 +104,48 @@
         }
     }
 
-    .main_ads {
+    .main_ads,
+    .main_cards {
         @extend .padding_20;
     }
 
     .main_services_title {
         text-align: center;
         font-size: 2rem;
+
+    }
+
+    .main_adoption {
+        flex-direction: column;
+        gap: 25px;
+        @extend .padding_20;
+
+        &>div {
+            width: 100%;
+        }
+    }
+
+    .main_adoption_title {
+        line-height: 40px;
+    }
+
+    .main_cards_cats {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main_requirements {
+        @extend .padding_20;
+    }
+
+    .main_requirements_list {
+        margin-top: 330px;
+        width: unset;
+        padding: 40px;
+        margin-bottom: 40px;
+    }
+
+    .main_requirements_img {
+        top: 40px;
     }
 
     footer {
