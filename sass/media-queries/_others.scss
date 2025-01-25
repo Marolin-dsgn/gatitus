@@ -1,7 +1,11 @@
 /* 0 - 1050px */
 @media (width <=1050px) {
-    .main_reserva {
+    .direction_column {
         flex-direction: column;
+    }
+
+    .main_reserva {
+        @extend .direction_column;
         gap: 30px;
     }
 
@@ -10,7 +14,7 @@
     }
 
     .main_requirements {
-        flex-direction: column;
+        @extend .direction_column;
         position: relative;
     }
 
@@ -18,6 +22,15 @@
         max-width: 500px;
         width: 95%;
         position: absolute;
+    }
+
+    .main_volunteers {
+        @extend .direction_column;
+        padding-top: 0;
+    }
+
+    .main_programs {
+        @extend .direction_column;
     }
 }
 
@@ -65,9 +78,14 @@
         height: unset;
     }
 
+    .btn_volunteer_form {
+        width: 100% !important;
+    }
+
     .footer_contact {
         align-items: center;
     }
+
 }
 
 /* 0 - 380px */

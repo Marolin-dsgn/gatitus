@@ -133,7 +133,9 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .main_requirements {
+    .main_requirements,
+    .main_volunteers,
+    .main_programs {
         @extend .padding_20;
     }
 
@@ -146,6 +148,15 @@
 
     .main_requirements_img {
         top: 40px;
+    }
+
+    .main_volunteers_list {
+        padding: 30px 50px;
+        width: 100%;
+    }
+
+    .btn_volunteer_form {
+        margin-bottom: 20px;
     }
 
     footer {

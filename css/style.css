@@ -1032,24 +1032,22 @@ main {
   right: 12px;
 }
 
-.main_volunteers_subtitle {
-  font-weight: 500;
-}
-
-.main_volunteers_subtitle {
-  font-size: 20px;
-}
-
 .btn_volunteer_form {
   width: 210px !important;
 }
 
-.main_volunteers {
+.main_volunteers,
+.main_programs {
   display: flex;
   flex-direction: row;
   gap: 50px;
   align-items: center;
   padding: 40px 60px;
+}
+
+.main_volunteers_subtitle {
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .main_volunteers_description h2 {
@@ -1059,10 +1057,12 @@ main {
   font-weight: 500;
   line-height: 31px;
   letter-spacing: 0.5px;
+  margin-bottom: 10px;
 }
 
 .main_volunteers_img {
   max-width: 469px;
+  width: 100%;
   border-radius: 20px;
   background: url(<path-to-image>) lightgray 50%/cover no-repeat;
 }
@@ -1215,7 +1215,9 @@ footer a:hover {
 }
 /* 0 - 768px */
 @media (width <= 768px) {
-  .padding_20, footer, .main_requirements, .main_adoption, .main_ads,
+  .padding_20, footer, .main_requirements,
+  .main_volunteers,
+  .main_programs, .main_adoption, .main_ads,
   .main_cards, .main_reserva,
   .main_services, .main_mision_vision, .main_payments, .main_banner {
     padding: 20px;
@@ -1310,6 +1312,13 @@ footer a:hover {
   .main_requirements_img {
     top: 40px;
   }
+  .main_volunteers_list {
+    padding: 30px 50px;
+    width: 100%;
+  }
+  .btn_volunteer_form {
+    margin-bottom: 20px;
+  }
   footer {
     font-size: 14px;
   }
@@ -1339,21 +1348,25 @@ footer a:hover {
 }
 /* 0 - 1050px */
 @media (width <= 1050px) {
-  .main_reserva {
+  .direction_column, .main_programs, .main_volunteers, .main_requirements, .main_reserva {
     flex-direction: column;
+  }
+  .main_reserva {
     gap: 30px;
   }
   .main_adoption {
     gap: 50px;
   }
   .main_requirements {
-    flex-direction: column;
     position: relative;
   }
   .main_requirements_img {
     max-width: 500px;
     width: 95%;
     position: absolute;
+  }
+  .main_volunteers {
+    padding-top: 0;
   }
 }
 /* 768px - 1050px */
@@ -1391,6 +1404,9 @@ footer a:hover {
   .main_reserva_img {
     width: 100%;
     height: unset;
+  }
+  .btn_volunteer_form {
+    width: 100% !important;
   }
   .footer_contact {
     align-items: center;

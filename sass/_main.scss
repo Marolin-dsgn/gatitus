@@ -1,7 +1,7 @@
 @import "variables";
 
-@mixin banner ($image_url) {
-    min-height: 465px;
+@mixin banner($image_url, $height: 465px) {
+    min-height: $height;
     padding: 50px 70px;
     display: flex;
     flex-direction: column;

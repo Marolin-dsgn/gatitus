@@ -14,25 +14,22 @@
     right: 12px;
 }
 
-.main_volunteers_subtitle {
-    font-weight: 500;
-}
-
-.main_volunteers_subtitle {
-    font-size: 20px;
-}
-
 .btn_volunteer_form {
     width: 210px !important;
 }
 
-.main_volunteers {
+.main_volunteers,
+.main_programs {
     display: flex;
     flex-direction: row;
     gap: 50px;
     align-items: center;
     padding: 40px 60px;
+}
 
+.main_volunteers_subtitle {
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .main_volunteers_description h2 {
@@ -42,10 +39,12 @@
     font-weight: 500;
     line-height: 31px;
     letter-spacing: 0.5px;
+    margin-bottom: 10px;
 }
 
 .main_volunteers_img {
     max-width: 469px;
+    width: 100%;
     border-radius: 20px;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
