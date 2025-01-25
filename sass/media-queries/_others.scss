@@ -3,10 +3,24 @@
 
 /* 0 - 450px */
 @media (width <=450px) {
+    .main_banner div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .payment_button,
+    .mv_item a {
+        width: 100%;
+    }
+
     .footer_contact {
         align-items: center;
     }
 }
 
 /* 0 - 380px */
-@media (width <=380px) {}
+@media (width <=380px) {
+    .payment_item img {
+        max-width: 100%;
+    }
+}

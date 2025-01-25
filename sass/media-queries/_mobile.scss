@@ -5,6 +5,9 @@
 }
 
 @media (width <=768px) {
+    .padding_20 {
+        padding: 20px;
+    }
 
     header {
         padding: 16px 20px;
@@ -19,10 +22,94 @@
         display: none;
     }
 
-    /*MAIN*/
+    .main_banner {
+        @extend .padding_20;
+        min-height: unset;
+        height: 385px;
+        justify-content: center;
+
+        p {
+            width: 90%;
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+
+    .banner_button {
+        width: 100%;
+    }
+
+    .payment_button,
+    .mv_item a {
+        width: 50%;
+        align-self: center;
+    }
+
+    .main_payments {
+        @extend .padding_20;
+
+        h2 {
+            font-size: 35px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        &>div {
+            padding: 25px;
+        }
+    }
+
+    .main_mision_vision {
+        @extend .padding_20;
+
+        &>div {
+            flex-direction: column;
+        }
+    }
+
+    .main_reserva,
+    .main_services {
+        @extend .padding_20;
+    }
+
+    .payment_items {
+        gap: 20px;
+
+        h4 {
+            text-wrap: wrap;
+            word-break: break-all;
+        }
+    }
+
+    .mv_item h2 {
+        font-size: 45px;
+    }
+
+    .main_help {
+        flex-direction: unset;
+        align-items: unset;
+        justify-content: flex-end;
+        padding: 30px 20px;
+        min-height: unset;
+
+        &>div {
+            padding: 30px;
+        }
+
+        h2 {
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+
+    .main_ads {
+        @extend .padding_20;
+    }
 
     footer {
-        padding: 20px;
+        @extend .padding_20;
         font-size: 14px;
     }
 

@@ -1,0 +1,5 @@
+@import "../main";
+
+.main_banner_bg_adopta {
+    @include banner("../images/banner_adopta.png");
+}

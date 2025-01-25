@@ -2,6 +2,15 @@
 @use "variables";
 @use "reset";
 @use "header";
+@use "main";
+
+/* PAGES */
+@use "pages/inicio";
+@use "pages/catFeteria";
+@use "pages/adopta";
+@use "pages/contacto";
+@use "pages/voluntariado";
+
 @use "footer";
 @use "sidebar";
 

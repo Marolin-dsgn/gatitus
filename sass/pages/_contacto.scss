@@ -1,0 +1,5 @@
+@import "../main";
+
+.main_banner_bg_contacto {
+    @include banner("../images/banner_contacto.png");
+}

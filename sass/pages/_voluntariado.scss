@@ -1,0 +1,5 @@
+@import "../main";
+
+.main_banner_bg_voluntariado {
+    @include banner("../images/banner_voluntariado.png");
+}
