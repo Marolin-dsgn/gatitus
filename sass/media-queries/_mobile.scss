@@ -108,6 +108,11 @@
         @extend .padding_20;
     }
 
+    .main_services_title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
     footer {
         @extend .padding_20;
         font-size: 14px;
