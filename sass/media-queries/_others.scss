@@ -24,7 +24,8 @@
         position: absolute;
     }
 
-    .main_volunteers {
+    .main_volunteers,
+    .main_location {
         @extend .direction_column;
         padding-top: 0;
     }
@@ -78,6 +79,14 @@
         height: unset;
     }
 
+    .main_form_container {
+        padding: 30px 40px;
+
+        button {
+            width: 100% !important;
+        }
+    }
+
     .btn_volunteer_form {
         width: 100% !important;
     }
@@ -85,6 +94,7 @@
     .footer_contact {
         align-items: center;
     }
+
 
 }
 

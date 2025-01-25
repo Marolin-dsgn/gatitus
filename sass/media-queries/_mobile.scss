@@ -70,8 +70,14 @@
     }
 
     .main_reserva,
-    .main_services {
+    .main_services,
+    .main_location,
+    .main_form {
         @extend .padding_20;
+    }
+
+    .main_form {
+        margin-bottom: 40px;
     }
 
     .payment_items {

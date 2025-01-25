@@ -24,6 +24,7 @@
 
 .main_location_description h2 {
     color: $primary;
+    margin-bottom: 10px;
     font-size: 30px;
     font-style: normal;
     font-weight: 500;
@@ -39,6 +40,14 @@
     color: $primary;
 }
 
+.main_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+
 .main_form_container {
     display: flex;
     flex-direction: column;
@@ -48,10 +57,9 @@
     background: $accent50;
     box-shadow: 0px 4px 8.1px 0px rgba(0, 0, 0, 0.25);
     padding: 30px 71px;
-    min-width: 659px;
-}
+    max-width: 659px;
+    width: 100%;
 
-.main_form_container {
     h2 {
         @extend .center;
         font-weight: 400;
@@ -62,6 +70,6 @@
     h3 {
         @extend .center;
         font-weight: 300;
-        line-height: 40px;
+        line-height: 28px;
     }
 }
