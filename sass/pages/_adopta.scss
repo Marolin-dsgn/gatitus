@@ -1,5 +1,56 @@
 @import "../main";
 
+@mixin config_list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: $accent400;
+    width: 660px;
+    padding: 30px 71px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8.1px 0px rgba(0, 0, 0, 0.25);
+}
+
 .main_banner_bg_adopta {
     @include banner("../images/banner_adopta.png");
+}
+
+.main_card_cat_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main_card_cat {
+    max-width: 310px;
+
+    a {
+        color: black;
+    }
+}
+
+.main_requirements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.main_requirements_img {
+    width: 592px;
+    height: 411px;
+    border-radius: 12px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.main_requirements_list {
+    @include config_list;
+
+    h2 {
+        font-weight: 400;
+    }
+}
+
+.main_volunteers_list {
+    @include config_list;
 }
