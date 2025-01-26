@@ -287,7 +287,7 @@ main {
   gap: 17px;
   color: white;
   justify-content: center;
-  background: url("../images/banner_index.png") center;
+  background: url("../images/banner_index.webp") center;
   background-size: cover;
   background-position: center 30%;
   justify-content: unset;
@@ -543,7 +543,7 @@ main {
   gap: 17px;
   color: white;
   justify-content: center;
-  background: url("../images/banner_catFeteria.png") center;
+  background: url("../images/banner_catFeteria.webp") center;
   background-size: cover;
   background-position: center 30%;
 }
@@ -701,7 +701,7 @@ main {
   gap: 17px;
   color: white;
   justify-content: center;
-  background: url("../images/banner_adopta.png") center;
+  background: url("../images/banner_adopta.webp") center;
   background-size: cover;
   background-position: center 30%;
 }
@@ -881,7 +881,7 @@ main {
   gap: 17px;
   color: white;
   justify-content: center;
-  background: url("../images/banner_contacto.png") center;
+  background: url("../images/banner_contacto.webp") center;
   background-size: cover;
   background-position: center 30%;
 }
@@ -1033,7 +1033,7 @@ main {
   gap: 17px;
   color: white;
   justify-content: center;
-  background: url("../images/banner_voluntariado.png") center;
+  background: url("../images/banner_voluntariado.webp") center;
   background-size: cover;
   background-position: center 30%;
 }
