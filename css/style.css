@@ -173,6 +173,7 @@ main {
   align-self: end;
   border: 0;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .form-control {
@@ -251,6 +252,7 @@ main {
   align-self: end;
   border: 0;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .form-control {
@@ -511,6 +513,7 @@ main {
   align-self: end;
   border: 0;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .form-control {
@@ -668,6 +671,7 @@ main {
   align-self: end;
   border: 0;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .form-control {
@@ -843,6 +847,7 @@ main {
   align-self: end;
   border: 0;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .form-control {
@@ -998,6 +1003,7 @@ main {
   align-self: end;
   border: 0;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .form-control {
@@ -1423,10 +1429,14 @@ footer a:hover {
     height: unset;
   }
   .main_form_container {
-    padding: 30px 40px;
+    padding: 30px;
   }
   .main_form_container button {
     width: 100% !important;
+  }
+  .main_volunteers_list,
+  .main_requirements_list {
+    padding: 30px;
   }
   .btn_volunteer_form {
     width: 100% !important;
